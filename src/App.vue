@@ -2,6 +2,8 @@
   <div class="content-container">
     <Header/>
     <Introduction/>
+
+    <img class="app-circle-img" src="@/assets/circle.svg" alt="">
   </div>
 </template>
 
@@ -29,7 +31,7 @@ body{
 h1{
   font-family: 'Space Grotesk';
   margin: 0;
-  font-size: 4.5em;
+  font-size: 4em;
 }
 h3{
   font-family: 'Space Grotesk';
@@ -47,6 +49,10 @@ p{
   margin: 0;
   font-size: 1.3em;
 }
-.content-container{
+.app-circle-img{
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 25em;
 }
 </style>
