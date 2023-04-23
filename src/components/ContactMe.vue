@@ -13,6 +13,7 @@ export default {
     border-bottom:  #4EE1A0 0.2em solid;
     padding-bottom: 1vh;
     width: fit-content;
+    cursor: pointer;
 }
 
 </style>
