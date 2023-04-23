@@ -2,6 +2,7 @@
   <div class="content-container">
     <Header/>
     <Introduction/>
+    <Skills/>
 
     <img class="app-circle-img" src="@/assets/circle.svg" alt="">
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Introduction from './components/Introduction.vue';
 import Header from './components/Header.vue';
+import Skills from './components/Skills.vue';
 
 export default {
   name: 'App',
   components: {
     Introduction,
-    Header
+    Header,
+    Skills
   }
 }
 </script>

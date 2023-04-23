@@ -5,7 +5,12 @@
             <p class="introduction-description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
             <ContactMe class="introduction-contact-class"/>
         </div>
-        <img class="introduction-img" src="@/assets/photo.png" alt="">
+        <div class="introduction-img-container">
+            <img class="introduction-img-oval" src="@/assets/oval.svg" alt="">
+            <img class="introduction-img" src="@/assets/photo.png" alt="">
+            
+        </div>
+        
     </div>
 </template>
 
@@ -31,8 +36,12 @@ export default {
     flex-direction: column;
     justify-content: center;
 }
-.introduction-img{
+.introduction-img-container{
     width: 45%;
+    position: relative;
+}
+.introduction-img{
+    width: 100%;
 }
 .introduction-main-text{
     width: 120%;
@@ -47,5 +56,11 @@ export default {
 }
 .introduction-contact-class{
     margin-top: 3vh;
+}
+.introduction-img-oval{
+    position: absolute;
+    margin-top: 110%;
+    width: 8em;
+    margin-left: -11%;
 }
 </style>
