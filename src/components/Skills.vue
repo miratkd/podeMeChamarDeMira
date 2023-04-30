@@ -2,33 +2,33 @@
     <div>
         <div class="skills-row">
             <div class="skill-cell">
-                <h1>HTML/CSS</h1>
+                <h3>HTML/CSS</h3>
                 <p>2 anos de experiência</p>
             </div>
             <div class="skill-cell">
-                <h1>Javascript</h1>
+                <h3>Javascript</h3>
                 <p>2 anos de experiência</p></div>
             <div class="skill-cell">
-                <h1>Vue.JS</h1>
+                <h3>Vue.JS</h3>
                 <p>2 anos de experiência</p></div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
-                <h1>Python</h1>
+                <h3>Python</h3>
                 <p>1 ano de experiência</p>
             </div>
             <div class="skill-cell">
-                <h1>Django Rest</h1>
+                <h3>Django Rest</h3>
                 <p>1 ano de experiência</p>
             </div>
             <div class="skill-cell">
-                <h1>SQL/Postgresql</h1>
+                <h3>SQL/Postgresql</h3>
                 <p>1 ano de experiência</p>
             </div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
-                <h1>Agile</h1>
+                <h3>Agile</h3>
                 <p>2 anos de experiência</p>
             </div>
         </div>

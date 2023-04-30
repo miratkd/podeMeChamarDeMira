@@ -3,8 +3,11 @@
     <Header/>
     <Introduction/>
     <Skills/>
+    <Projects/>
 
+    <!-- absolute -->
     <img class="app-circle-img" src="@/assets/circle.svg" alt="">
+    <img class="app-circle-img-2" src="@/assets/circle2.svg" alt="">
   </div>
 </template>
 
@@ -12,13 +15,15 @@
 import Introduction from './components/Introduction.vue';
 import Header from './components/Header.vue';
 import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
 
 export default {
   name: 'App',
   components: {
     Introduction,
     Header,
-    Skills
+    Skills,
+    Projects
   }
 }
 </script>
@@ -57,5 +62,11 @@ p{
   left: 0;
   top: 10vh;
   width: 25em;
+}
+.app-circle-img-2{
+  position: absolute;
+  right: 0;
+  top: 110vh;
+  width: 18em;
 }
 </style>
