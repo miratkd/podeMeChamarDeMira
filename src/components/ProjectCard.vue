@@ -1,17 +1,18 @@
 <template>
     <div>
         <div class="project-card-container">
-            <img class="project-card-img" src="@/assets/EasyPassword.png" alt="">
+            <img class="project-card-img" :src="project.img" alt="">
             <div class="project-card-img-info-container">
-                <p class="project-card-img-info-text">Ver Projeto</p>
-                <p class="project-card-img-info-text">Ver Código</p>
+                <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">Ver Projeto</p>
+                <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">Ver Código Front-End</p>
+                <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">Ver Código Back-End</p>
             </div>
         </div>
         
-        <h6 class="project-title">EasyPassword</h6>
-        <p class="project-desc">Based in the UK, Im a front-end developer passionate about building accessible web apps that users love.</p>
+        <h6 class="project-title">{{project.name}}</h6>
+        <p class="project-desc">{{project.desc}}</p>
         <div class="project-card-skills-conatiner">
-            <p v-for="(skill, idx) in skillsList" :key="idx">{{skill}}</p>
+            <p v-for="(skill, idx) in project.skills" :key="idx">{{skill}}</p>
         </div>
     </div>
 </template>
@@ -19,10 +20,9 @@
 <script>
 export default {
     name: 'ProjectCardComponent',
-    data () {
-        return {
-            skillsList: ['JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript','JavaScript',]
-        }
+    props: ['project'],
+    methods:{
+        goToLink (link) { window.open(link, '_blank'); }
     }
 }
 </script>
@@ -33,7 +33,7 @@ export default {
     transition: filter 0.3s;
 }
 .project-card-container:hover > .project-card-img{
-    filter: brightness(40%)
+    filter: brightness(15%)
 }
 .project-card-container:hover > .project-card-img-info-container{
     opacity: 1;
@@ -61,7 +61,7 @@ export default {
     margin: 1.5vh 0;
 }
 .project-desc{
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
 }
 .project-card-container{
     position: relative;

@@ -2,12 +2,10 @@
     <div class="projects-container">
         <div class="projects-title-container">
             <h1>Projetos</h1>
-            <ContactMe/>
+            <ContactMe />
         </div>
         <div class="projects-grid-container">
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
+            <ProjectCard v-for="project in projectsList" :key="project.name" :project="project" />
         </div>
     </div>
 </template>
@@ -18,26 +16,60 @@ import ProjectCard from './ProjectCard.vue';
 
 export default {
     name: 'ProjectsComponet',
-    components:{
+    components: {
         ContactMe,
         ProjectCard
+    },
+    data() {
+        return {
+            projectsList: [
+                {
+                    name: 'Black-Jack-Rest',
+                    img: require('@/assets/BlackJackRest.png'),
+                    desc: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql'],
+                    projectLink: 'https://black-jack-rest.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
+                    codeLinkBack: 'https://github.com/miratkd/BlackJackRest'
+                },
+                {
+                    name: 'Easy-Password',
+                    img: require('@/assets/EasyPassword.png'),
+                    desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma'],
+                    projectLink: 'https://easypassword-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
+                    codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
+                },
+                {
+                    name: 'Planets',
+                    img: require('@/assets/Planets.png'),
+                    desc: 'Que tal aprender mais um pouquinho sobre os planetas do nosso sistema solar?',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
+                    projectLink: 'https://showplanets.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/Planets',
+                    codeLinkBack: null
+                }
+            ]
+        }
     }
 }
 </script>
 
 <style scoped>
-.projects-container{
+.projects-container {
     margin-top: 5vh;
 }
-.projects-title-container{
+
+.projects-title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.projects-grid-container{
+
+.projects-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4vh 3vw;
     margin-top: 3vh;
-}
-</style>
+}</style>
