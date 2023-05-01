@@ -11,7 +11,6 @@
             <a href="https://www.linkedin.com/in/lucas-mira-17514b203/" target="_blank">
                 <img class="header-icon" src="@/assets/LinkedIn.svg" alt="LinkId">
             </a>
-            
         </div>
     </div>
 </template>

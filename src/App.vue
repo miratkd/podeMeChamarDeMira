@@ -1,13 +1,19 @@
 <template>
-  <div class="content-container">
-    <Header/>
-    <Introduction/>
-    <Skills/>
-    <Projects/>
+  <div>
+    <div class="content-container">
+      <Header />
+      <Introduction />
+      <Skills />
+      <Projects />
+      
+
+      
+    </div>
+    <Footer />
 
     <!-- absolute -->
-    <img class="app-circle-img" src="@/assets/circle.svg" alt="">
-    <img class="app-circle-img-2" src="@/assets/circle2.svg" alt="">
+      <img class="app-circle-img" src="@/assets/circle.svg" alt="">
+      <img class="app-circle-img-2" src="@/assets/circle2.svg" alt="">
   </div>
 </template>
 
@@ -16,6 +22,7 @@ import Introduction from './components/Introduction.vue';
 import Header from './components/Header.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -23,50 +30,59 @@ export default {
     Introduction,
     Header,
     Skills,
-    Projects
+    Projects,
+    Footer
   }
 }
 </script>
 
 <style>
-body{
+body {
   background: #151515;
   margin: 0;
   color: white;
   font-size: 1vw;
+  
+}
+.content-container{
   padding: 0 10vw;
 }
-h1{
+
+h1 {
   font-family: 'Space Grotesk';
   margin: 0;
   font-size: 4em;
 }
-h3{
+
+h3 {
   font-family: 'Space Grotesk';
   margin: 0;
   font-size: 3em;
 }
-h6{
+
+h6 {
   font-family: 'Space Grotesk';
   margin: 0;
   font-size: 2em;
-  
+
 }
-p{
+
+p {
   font-family: 'Space Grotesk';
   margin: 0;
   font-size: 1.3em;
 }
-.app-circle-img{
+
+.app-circle-img {
   position: absolute;
   left: 0;
   top: 10vh;
   width: 25em;
 }
-.app-circle-img-2{
+
+.app-circle-img-2 {
   position: absolute;
   right: 0;
   top: 110vh;
   width: 18em;
-}
-</style>
+}</style>

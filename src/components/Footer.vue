@@ -1,0 +1,78 @@
+<template>
+    <div class="footer-container">
+        <h1>Contato</h1>
+        <p class="footer-text">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+        <div class="footer-contact-me-container"><ContactMe /></div>
+        <div class="footer-line">
+            <p class="footer-name-text">LucasMira</p>
+            <div class="footer-icons-container">
+                <a href="https://www.codewars.com/users/miratkd" target="_blank">
+                    <img class="footer-icon" src="@/assets/codeWars2.png" alt="CodeWars">
+                </a>
+                <a href="https://github.com/miratkd" target="_blank">
+                    <img class="footer-icon" src="@/assets/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-mira-17514b203/" target="_blank">
+                    <img class="footer-icon" src="@/assets/LinkedIn.svg" alt="LinkId">
+                </a>
+            </div>
+        </div>
+
+
+        <img class="footer-circle-img" src="@/assets/circle.svg" alt="">
+    </div>
+</template>
+
+<script>
+import ContactMe from './ContactMe.vue';
+export default {
+    name: 'FooterComponent',
+    components:{
+        ContactMe
+    }
+}
+</script>
+
+<style scoped>
+.footer-container{
+    background: #242424;
+    padding: 5vh 10vw;
+    margin-top: 10vh;
+    position: relative;
+}
+.footer-text{
+    margin-top: 3vh;
+    width: 50%;
+}
+.footer-contact-me-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2vh;
+}
+.footer-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vh;
+    border-top: white 1px solid;
+    padding-top: 3vh;
+}
+.footer-name-text{
+    font-weight: 700;
+    font-size: 2.3em;
+}
+.footer-icons-container{
+    display: flex;
+    gap: 2vw;
+    margin-right: 3vw;
+}
+.footer-icon{
+    width: 2.5vw;
+    cursor: pointer;
+}
+.footer-circle-img {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    width: 20em;
+  }
+</style>
