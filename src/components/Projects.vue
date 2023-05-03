@@ -72,4 +72,12 @@ export default {
     grid-template-columns: 1fr 1fr;
     gap: 4vh 3vw;
     margin-top: 3vh;
+}
+@media screen and (max-width: 850px){
+    .projects-container {
+        margin: 0 3vw;
+    }
+    .projects-grid-container{
+        gap: 4vh 1.5vw;
+    }
 }</style>

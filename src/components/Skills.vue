@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="skills-container">
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>HTML/CSS</h3>
@@ -48,5 +48,13 @@ export default {
 }
 .skill-cell{
     width: 33%;
+}
+.skills-container{
+    border-top: 1px solid white;
+}
+@media screen and (max-width: 850px){
+    .skills-container{
+        margin: 0 3vw;
+    }
 }
 </style>

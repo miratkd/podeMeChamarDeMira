@@ -85,4 +85,20 @@ p {
   right: 0;
   top: 110vh;
   width: 18em;
-}</style>
+}
+@media screen and (max-width: 850px) {
+  body{
+    font-size: 1.5vw;
+  }
+  .content-container{
+    padding: 0;
+  }
+  .app-circle-img{
+    width: 20em;
+    top: 8vh;
+  }
+  .app-circle-img-2 {
+    top: 70vh;
+  }
+}
+</style>

@@ -14,6 +14,13 @@
         <div class="project-card-skills-conatiner">
             <p v-for="(skill, idx) in project.skills" :key="idx">{{skill}}</p>
         </div>
+        <div class="project-mobile-row">
+            <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">Ver Projeto</p>
+        </div>
+        <div class="project-mobile-row">
+            <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">Ver Código Front-End</p>
+            <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">Ver Código Back-End</p>
+        </div>
     </div>
 </template>
 
@@ -31,6 +38,9 @@ export default {
 .project-card-img{
     width: 100%;
     transition: filter 0.3s;
+}
+.project-mobile-row{
+    display: none;
 }
 .project-card-container:hover > .project-card-img{
     filter: brightness(15%)
@@ -72,5 +82,18 @@ export default {
     padding-bottom: 1vh;
     border-bottom: 0.5vh solid #4EE1A0;
     cursor: pointer;
+}
+@media screen and (max-width: 850px){
+    .project-card-img-info-container{display: none;}
+    .project-card-container:hover > .project-card-img{ filter: unset }
+    .project-card-container:hover > .project-card-img-info-container{ opacity: unset; }
+    .project-mobile-row{
+        display: flex;
+        gap: 2em;
+        margin-top: 2em;
+    }
+    .project-card-img-info-text{
+        border-bottom: 0.2vh solid #4EE1A0;
+    }
 }
 </style>

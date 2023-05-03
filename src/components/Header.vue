@@ -41,7 +41,16 @@ export default {
     margin-right: 3vw;
 }
 .header-icon{
-    width: 2.5vw;
+    width: 2.5em;
     cursor: pointer;
+}
+@media screen and (max-width: 850px){
+    .header-container{
+        width: 90%;
+        padding: 0 5%
+    }
+    .header-icons-container{
+        margin-right: 0;
+    }
 }
 </style>
