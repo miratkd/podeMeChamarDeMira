@@ -91,4 +91,33 @@ export default {
         width: 8em;
         margin-left: -15%;
     }
-}</style>
+}
+@media screen and (max-width: 450px){
+    .introduction-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .introduction-img-container{
+        width: 65%;
+    }
+    .introduction-img-oval{
+        margin-top: 122%;
+        width: 8em;
+        margin-left: unset;
+        right: -15%;
+    }
+    .introduction-text-container {
+        margin-top: 5vh;
+        padding-left: 0;
+        width: 90%;
+        text-align: center;
+    }
+    .introduction-main-text{
+        width: 100%;
+    }
+    .introduction-contact-class {
+        margin: 0 auto;
+        margin-top: 3vh;
+    }
+}
+</style>

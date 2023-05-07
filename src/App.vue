@@ -101,4 +101,24 @@ p {
     top: 70vh;
   }
 }
+@media screen and (max-width: 450px) {
+  .app-circle-img {
+    top: 20vh;
+    width: 22em;
+    left: -20%;
+  }
+  body{
+    font-size: 2.5vw;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .app-circle-img-2 {
+    top: 110vh;
+    width: 12em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
 </style>

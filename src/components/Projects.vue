@@ -80,4 +80,9 @@ export default {
     .projects-grid-container{
         gap: 4vh 1.5vw;
     }
+}
+@media screen and (max-width: 450px){
+    .projects-grid-container {
+        grid-template-columns: 1fr;
+    }
 }</style>

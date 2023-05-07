@@ -37,7 +37,7 @@ export default {
 }
 .header-icons-container{
     display: flex;
-    gap: 2vw;
+    gap: 2em;
     margin-right: 3vw;
 }
 .header-icon{
@@ -51,6 +51,13 @@ export default {
     }
     .header-icons-container{
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15%;
     }
 }
 </style>

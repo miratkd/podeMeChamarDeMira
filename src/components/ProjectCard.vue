@@ -95,5 +95,11 @@ export default {
     .project-card-img-info-text{
         border-bottom: 0.2vh solid #4EE1A0;
     }
+    
+}
+@media screen and (max-width: 850px){
+    .project-card-skills-conatiner{
+        gap: 1vh 5vw;
+    }
 }
 </style>

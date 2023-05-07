@@ -66,7 +66,7 @@ export default {
     margin-right: 3vw;
 }
 .footer-icon{
-    width: 2.5vw;
+    width: 2.5em;
     cursor: pointer;
 }
 .footer-circle-img {
@@ -74,5 +74,22 @@ export default {
     left: 0;
     bottom: 25%;
     width: 20em;
+  }
+  @media screen and (max-width: 850px){
+    .footer-container{
+        text-align: center;
+        padding: 2.5vh 10vw;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    .footer-contact-me-container{
+        margin-top: 0;
+    }
+    .footer-circle-img{
+        left: -20%;
+        bottom: 35%;
+        width: 21em;
+    }
   }
 </style>

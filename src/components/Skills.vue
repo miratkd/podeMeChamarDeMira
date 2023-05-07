@@ -57,4 +57,19 @@ export default {
         margin: 0 3vw;
     }
 }
+@media screen and (max-width: 450px) {
+    .skills-row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+    }
+    .skills-container{
+        padding-top: 5vh;
+    }
+    .skill-cell{
+        width: 100%;
+        margin-bottom: 2.5vh;
+    }
+}
 </style>
