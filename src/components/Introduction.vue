@@ -4,8 +4,11 @@
             <h1 class="introduction-main-text">Prazer em conhecer! <br> Eu me chamo <b
                     class="introduction-name-detail">Lucas Mira</b>, <br> Mas pode me chamar apenas de <b
                     class="introduction-name-detail">Mira</b></h1>
-            <p class="introduction-description">Based in the UK, I’m a front-end developer passionate about building
-                accessible web apps that users love.</p>
+            <p class="introduction-description">Desenvolvedor Full-Stack buscando sempre uma nova oportunidade de crescer. 
+                Fui exposto à tecnologia desde muito cedo, 
+                acredito que esse seja o motivo pelo qual código sempre foi algo tão natural para min. 
+                Programação tem sido o meu foco nos últimos 5 anos da minha vida, 
+                e espero que continue sendo pelos próximos 20.</p>
             <ContactMe class="introduction-contact-class" />
         </div>
         <div class="introduction-img-container">

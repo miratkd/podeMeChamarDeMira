@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container">
         <h1>Contato</h1>
-        <p class="footer-text">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+        <p class="footer-text">Gostou do meu perfil? Acha que eu me encaixaria no seu projeto? Por favor, entre em contato, eu adoraria conversar e descobrir como posso ajudar o seu projeto a ir para frente.</p>
         <div class="footer-contact-me-container"><ContactMe /></div>
         <div class="footer-line">
             <p class="footer-name-text">LucasMira</p>
