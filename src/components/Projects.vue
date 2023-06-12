@@ -24,13 +24,13 @@ export default {
         return {
             projectsList: [
                 {
-                    name: 'Black-Jack-Rest',
-                    img: require('@/assets/BlackJackRest.png'),
-                    desc: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql'],
-                    projectLink: 'https://black-jack-rest.netlify.app/',
-                    codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
-                    codeLinkBack: 'https://github.com/miratkd/BlackJackRest'
+                    name: 'Audiphile',
+                    img: require('@/assets/audiphile.png'),
+                    desc: 'Um site para mostrar a importância de uma interface na hora de vender alguma coisa.',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    projectLink: 'https://audiphile.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/Audiophile',
+                    codeLinkBack: null
                 },
                 {
                     name: 'Easy-Password',
@@ -40,6 +40,15 @@ export default {
                     projectLink: 'https://easypassword-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
                     codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
+                },
+                {
+                    name: 'Black-Jack-Rest',
+                    img: require('@/assets/BlackJackRest.png'),
+                    desc: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql'],
+                    projectLink: 'https://black-jack-rest.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
+                    codeLinkBack: 'https://github.com/miratkd/BlackJackRest'
                 },
                 {
                     name: 'Planets',
