@@ -33,6 +33,15 @@ export default {
                     codeLinkBack: null
                 },
                 {
+                    name: 'Connect-Four',
+                    img: require('@/assets/connect-four.png'),
+                    desc: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    projectLink: 'https://connect-four-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/Connect-Four',
+                    codeLinkBack: null
+                },
+                {
                     name: 'Easy-Password',
                     img: require('@/assets/EasyPassword.png'),
                     desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
