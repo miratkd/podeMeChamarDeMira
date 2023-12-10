@@ -3,14 +3,14 @@
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>HTML/CSS</h3>
-                <p>2 anos de experiência</p>
+                <p>3 anos de experiência</p>
             </div>
             <div class="skill-cell">
                 <h3>Javascript</h3>
-                <p>2 anos de experiência</p></div>
+                <p>3 anos de experiência</p></div>
             <div class="skill-cell">
                 <h3>Vue.JS</h3>
-                <p>2 anos de experiência</p></div>
+                <p>3 anos de experiência</p></div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
@@ -29,7 +29,7 @@
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>Agile</h3>
-                <p>2 anos de experiência</p>
+                <p>3 anos de experiência</p>
             </div>
         </div>
     </div>
