@@ -37,7 +37,7 @@ export default {
 .footer-container{
     background: #242424;
     padding: 5vh 10vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
     position: relative;
 }
 .footer-text{

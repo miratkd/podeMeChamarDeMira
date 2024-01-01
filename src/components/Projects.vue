@@ -24,12 +24,30 @@ export default {
         return {
             projectsList: [
                 {
+                    name: 'Easy-Password',
+                    img: require('@/assets/EasyPassword.png'),
+                    desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma'],
+                    projectLink: 'https://easypassword-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
+                    codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
+                },
+                {
                     name: 'Audiphile',
                     img: require('@/assets/audiphile.png'),
                     desc: 'Um site para mostrar a importância de uma interface na hora de vender alguma coisa.',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
                     projectLink: 'https://audiphile.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Audiophile',
+                    codeLinkBack: null
+                },
+                {
+                    name: 'Arch',
+                    img: require('@/assets/arch.png'),
+                    desc: 'Um projeto voltado para estética, beleza e minimalismo. Meus professores de arte ficariam orgulhosos.',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    projectLink: 'https://arch-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/Art-Studio?tab=readme-ov-file',
                     codeLinkBack: null
                 },
                 {
@@ -40,15 +58,6 @@ export default {
                     projectLink: 'https://connect-four-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Connect-Four',
                     codeLinkBack: null
-                },
-                {
-                    name: 'Easy-Password',
-                    img: require('@/assets/EasyPassword.png'),
-                    desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma'],
-                    projectLink: 'https://easypassword-lm.netlify.app/',
-                    codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
-                    codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
                 },
                 {
                     name: 'Black-Jack-Rest',
@@ -76,7 +85,7 @@ export default {
 
 <style scoped>
 .projects-container {
-    margin-top: 5vh;
+    margin-top: 12vh;
 }
 
 .projects-title-container {
@@ -88,18 +97,21 @@ export default {
 .projects-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4vh 3vw;
+    gap: 10vh 3vw;
     margin-top: 3vh;
 }
-@media screen and (max-width: 850px){
+
+@media screen and (max-width: 850px) {
     .projects-container {
-        margin: 0 3vw;
+        margin: 10vh 3vw;
     }
-    .projects-grid-container{
-        gap: 4vh 1.5vw;
+
+    .projects-grid-container {
+        gap: 10vh 1.5vw;
     }
 }
-@media screen and (max-width: 450px){
+
+@media screen and (max-width: 450px) {
     .projects-grid-container {
         grid-template-columns: 1fr;
     }

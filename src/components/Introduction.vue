@@ -8,7 +8,7 @@
                 Fui exposto à tecnologia desde muito cedo, 
                 acredito que esse seja o motivo pelo qual código sempre foi algo tão natural para min. 
                 Programação tem sido o meu foco nos últimos 5 anos da minha vida, 
-                e espero que continue sendo pelos próximos 20.</p>
+                e espero que continue sendo pelos próximos 50.</p>
             <ContactMe class="introduction-contact-class" />
         </div>
         <div class="introduction-img-container">
@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .introduction-container {
     display: flex;
-    padding-bottom: 7vh;
+    padding-bottom: 15vh;
 }
 
 .introduction-text-container {
