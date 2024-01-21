@@ -27,7 +27,7 @@ export default {
                     name: 'Easy-Password',
                     img: require('@/assets/EasyPassword.png'),
                     desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma', 'Cypress'],
                     projectLink: 'https://easypassword-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
                     codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
@@ -36,7 +36,7 @@ export default {
                     name: 'Audiphile',
                     img: require('@/assets/audiphile.png'),
                     desc: 'Um site para mostrar a importância de uma interface na hora de vender alguma coisa.',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://audiphile.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Audiophile',
                     codeLinkBack: null
@@ -45,7 +45,7 @@ export default {
                     name: 'Arch',
                     img: require('@/assets/arch.png'),
                     desc: 'Um projeto voltado para estética, beleza e minimalismo. Meus professores de arte ficariam orgulhosos.',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://arch-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Art-Studio?tab=readme-ov-file',
                     codeLinkBack: null
@@ -54,7 +54,7 @@ export default {
                     name: 'Connect-Four',
                     img: require('@/assets/connect-four.png'),
                     desc: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://connect-four-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Connect-Four',
                     codeLinkBack: null
