@@ -54,7 +54,7 @@ export default {
                     name: 'Connect-Four',
                     img: require('@/assets/connect-four.png'),
                     desc: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma', 'Cypress'],
                     projectLink: 'https://connect-four-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Connect-Four',
                     codeLinkBack: null
