@@ -2,12 +2,9 @@
   <div>
     <div class="content-container">
       <Header />
-      <Introduction />
-      <Skills />
-      <Projects />
-      
-
-      
+      <Introduction :languagePortuguese="languagePortuguese"/>
+      <Skills :languagePortuguese="languagePortuguese"/>
+      <Projects :languagePortuguese="languagePortuguese"/>
     </div>
     <Footer />
 
@@ -32,6 +29,11 @@ export default {
     Skills,
     Projects,
     Footer
+  },
+  data(){
+    return{
+      languagePortuguese: (navigator.language || navigator.userLanguage) == 'pt-BR'
+    }
   }
 }
 </script>

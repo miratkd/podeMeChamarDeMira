@@ -3,33 +3,33 @@
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>HTML/CSS</h3>
-                <p>3 anos de experiência</p>
+                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
             </div>
             <div class="skill-cell">
                 <h3>Javascript</h3>
-                <p>3 anos de experiência</p></div>
+                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
             <div class="skill-cell">
                 <h3>Vue.JS</h3>
-                <p>3 anos de experiência</p></div>
+                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>Python</h3>
-                <p>1 ano de experiência</p>
+                <p>1 {{ languagePortuguese ? 'ano de experiência' : 'Year of experience' }}</p>
             </div>
             <div class="skill-cell">
                 <h3>Django Rest</h3>
-                <p>1 ano de experiência</p>
+                <p>1 {{ languagePortuguese ? 'ano de experiência' : 'Year of experience' }}</p>
             </div>
             <div class="skill-cell">
                 <h3>SQL/Postgresql</h3>
-                <p>1 ano de experiência</p>
+                <p>1 {{ languagePortuguese ? 'ano de experiência' : 'Year of experience' }}</p>
             </div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>Agile</h3>
-                <p>3 anos de experiência</p>
+                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
             </div>
         </div>
     </div>
@@ -37,7 +37,8 @@
 
 <script>
 export default {
-    name: 'SkillsComponent'
+    name: 'SkillsComponent',
+    props:['languagePortuguese'],
 }
 </script>
 

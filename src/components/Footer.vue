@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container">
-        <h1>Contato</h1>
-        <p class="footer-text">Gostou do meu perfil? Acha que eu me encaixaria no seu projeto? Por favor, entre em contato, eu adoraria conversar e descobrir como posso ajudar o seu projeto a ir para frente.</p>
+        <h1>{{ languagePortuguese ? 'Contato' : 'Contact' }}</h1>
+        <p class="footer-text">{{ languagePortuguese ? textBR : textUS }}</p>
         <div class="footer-contact-me-container"><ContactMe /></div>
         <div class="footer-line">
             <p class="footer-name-text">LucasMira</p>
@@ -27,8 +27,15 @@
 import ContactMe from './ContactMe.vue';
 export default {
     name: 'FooterComponent',
+    props:['languagePortuguese'],
     components:{
         ContactMe
+    },
+    data(){
+        return {
+            textBR: 'Gostou do meu perfil? Acha que eu me encaixaria no seu projeto? Por favor, entre em contato, eu adoraria conversar e descobrir como posso ajudar o seu projeto a ir para frente.',
+            textUS: "Did you like my profile? Do you think I'd fit your bill? Please get in touch, I'd love to chat and find out how I can help your project move forward.",
+        }
     }
 }
 </script>

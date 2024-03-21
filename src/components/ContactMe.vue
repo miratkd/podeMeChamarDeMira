@@ -1,10 +1,13 @@
 <template>
-    <a href="https://www.linkedin.com/in/lucas-mira-17514b203/" target="_blank" class="contact-p">ENTRAR EM CONTATO</a>
+    <a href="https://www.linkedin.com/in/lucas-mira-17514b203/" target="_blank" class="contact-p">
+        {{languagePortuguese ? 'ENTRAR EM CONTATO' : 'CONTACT ME'}}
+    </a>
 </template>
 
 <script>
 export default {
-    name: 'ContactMeComponent'
+    name: 'ContactMeComponent',
+    props:['languagePortuguese']
 }
 </script>
 

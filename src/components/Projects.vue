@@ -1,11 +1,11 @@
 <template>
     <div class="projects-container">
         <div class="projects-title-container">
-            <h1>Projetos</h1>
+            <h1>{{languagePortuguese ? 'Projetos' : 'Projects'}}</h1>
             <ContactMe />
         </div>
         <div class="projects-grid-container">
-            <ProjectCard v-for="project in projectsList" :key="project.name" :project="project" />
+            <ProjectCard v-for="project in projectsList" :languagePortuguese="languagePortuguese" :key="project.name" :project="project" />
         </div>
     </div>
 </template>
@@ -16,6 +16,7 @@ import ProjectCard from './ProjectCard.vue';
 
 export default {
     name: 'ProjectsComponet',
+    props:['languagePortuguese'],
     components: {
         ContactMe,
         ProjectCard
@@ -26,7 +27,8 @@ export default {
                 {
                     name: 'Easy-Password',
                     img: require('@/assets/EasyPassword.png'),
-                    desc: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
+                    descBR: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
+                    descUS: "If you're also tired of the 'forgot password' button, take a look at this project, you'll find it interesting.",
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma', 'Cypress'],
                     projectLink: 'https://easypassword-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
@@ -35,7 +37,8 @@ export default {
                 {
                     name: 'Audiphile',
                     img: require('@/assets/audiphile.png'),
-                    desc: 'Um site para mostrar a importância de uma interface na hora de vender alguma coisa.',
+                    descBR: 'Um site para mostrar a importância de uma interface na hora de vender alguma coisa.',
+                    descUS: 'A website to show the importance of an interface when it comes to selling something.',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://audiphile.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Audiophile',
@@ -44,7 +47,8 @@ export default {
                 {
                     name: 'Arch',
                     img: require('@/assets/arch.png'),
-                    desc: 'Um projeto voltado para estética, beleza e minimalismo. Meus professores de arte ficariam orgulhosos.',
+                    descBR: 'Um projeto voltado para estética, beleza e minimalismo. Meus professores de arte ficariam orgulhosos.',
+                    descUS: 'A project focused on aesthetics, beauty and minimalism. My art teachers would be proud.',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://arch-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Art-Studio?tab=readme-ov-file',
@@ -53,7 +57,8 @@ export default {
                 {
                     name: 'Connect-Four',
                     img: require('@/assets/connect-four.png'),
-                    desc: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
+                    descBR: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
+                    descUS: 'Remember spending hours playing "connect four" when you were a kid? No? Me neither...',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma', 'Cypress'],
                     projectLink: 'https://connect-four-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Connect-Four',
@@ -62,7 +67,8 @@ export default {
                 {
                     name: 'Black-Jack-Rest',
                     img: require('@/assets/BlackJackRest.png'),
-                    desc: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
+                    descBR: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
+                    descUS: 'How about a little game of Black-Jack?',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql'],
                     projectLink: 'https://black-jack-rest.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
@@ -71,7 +77,8 @@ export default {
                 {
                     name: 'Planets',
                     img: require('@/assets/Planets.png'),
-                    desc: 'Que tal aprender mais um pouquinho sobre os planetas do nosso sistema solar?',
+                    descBR: 'Que tal aprender mais um pouquinho sobre os planetas do nosso sistema solar?',
+                    descUS: 'How about learning a little more about the planets in our solar system?',
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://showplanets.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Planets',

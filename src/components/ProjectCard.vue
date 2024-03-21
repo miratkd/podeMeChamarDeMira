@@ -3,23 +3,23 @@
         <div class="project-card-container">
             <img class="project-card-img" :src="project.img" alt="">
             <div class="project-card-img-info-container">
-                <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">Ver Projeto</p>
-                <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">Ver Código Front-End</p>
-                <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">Ver Código Back-End</p>
+                <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Projeto' : 'View Project'}}</p>
+                <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Front-End' : 'View Front-End Code'}}</p>
+                <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Back-End' : 'View Back-End Code'}}</p>
             </div>
         </div>
         
         <h6 class="project-title">{{project.name}}</h6>
-        <p class="project-desc">{{project.desc}}</p>
+        <p class="project-desc">{{languagePortuguese ? project.descBR : project.descUS}}</p>
         <div class="project-card-skills-conatiner">
             <p v-for="(skill, idx) in project.skills" :key="idx">{{skill}}</p>
         </div>
         <div class="project-mobile-row">
-            <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">Ver Projeto</p>
+            <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Projeto' : 'View Project'}}</p>
         </div>
         <div class="project-mobile-row">
-            <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">Ver Código Front-End</p>
-            <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">Ver Código Back-End</p>
+            <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Front-End' : 'View Front-End Code'}}</p>
+            <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Back-End' : 'View Back-End Code'}}</p>
         </div>
     </div>
 </template>
@@ -27,7 +27,7 @@
 <script>
 export default {
     name: 'ProjectCardComponent',
-    props: ['project'],
+    props: ['project', 'languagePortuguese'],
     methods:{
         goToLink (link) { window.open(link, '_blank'); }
     }
