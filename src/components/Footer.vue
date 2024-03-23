@@ -6,6 +6,8 @@
         <div class="footer-line">
             <p class="footer-name-text">LucasMira</p>
             <div class="footer-icons-container">
+                <img v-if="!languagePortuguese" @click="updateLanguage" class="header-ptbr-icon" src="@/assets/pt-br.avif" title="Trocar texto para Português" alt="Trocar texto para Português">
+                <img v-else class="header-ptbr-icon" @click="updateLanguage" src="@/assets/usaicon.jpeg" title="Change text to English" alt="Change text to English">
                 <a href="https://www.codewars.com/users/miratkd" target="_blank">
                     <img class="footer-icon" src="@/assets/codeWars2.png" alt="CodeWars">
                 </a>
@@ -27,7 +29,7 @@
 import ContactMe from './ContactMe.vue';
 export default {
     name: 'FooterComponent',
-    props:['languagePortuguese'],
+    props:['languagePortuguese', 'updateLanguage'],
     components:{
         ContactMe
     },
@@ -69,12 +71,18 @@ export default {
 }
 .footer-icons-container{
     display: flex;
+    align-items: center;
     gap: 2vw;
     margin-right: 3vw;
 }
 .footer-icon{
     width: 2.5em;
     cursor: pointer;
+}
+.header-ptbr-icon {
+    height: 3vh;
+    cursor: pointer;
+    border-radius: 10px;
 }
 .footer-circle-img {
     position: absolute;

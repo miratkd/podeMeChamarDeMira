@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="content-container">
-      <Header />
+      <Header :languagePortuguese="languagePortuguese" :updateLanguage="() => languagePortuguese=!languagePortuguese" />
       <Introduction :languagePortuguese="languagePortuguese"/>
       <Skills :languagePortuguese="languagePortuguese"/>
       <Projects :languagePortuguese="languagePortuguese"/>
     </div>
-    <Footer />
+    <Footer :languagePortuguese="languagePortuguese" :updateLanguage="() => languagePortuguese=!languagePortuguese"/>
 
     <!-- absolute -->
       <img class="app-circle-img" src="@/assets/circle.svg" alt="">
