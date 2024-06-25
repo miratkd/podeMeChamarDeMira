@@ -2,7 +2,7 @@
     <div class="footer-container">
         <h1>{{ languagePortuguese ? 'Contato' : 'Contact' }}</h1>
         <p class="footer-text">{{ languagePortuguese ? textBR : textUS }}</p>
-        <div class="footer-contact-me-container"><ContactMe /></div>
+        <div class="footer-contact-me-container"><ContactMe :languagePortuguese="languagePortuguese"/></div>
         <div class="footer-line">
             <p class="footer-name-text">LucasMira</p>
             <div class="footer-icons-container">

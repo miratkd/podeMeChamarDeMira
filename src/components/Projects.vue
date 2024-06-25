@@ -2,7 +2,7 @@
     <div class="projects-container">
         <div class="projects-title-container">
             <h1>{{languagePortuguese ? 'Projetos' : 'Projects'}}</h1>
-            <ContactMe />
+            <ContactMe :languagePortuguese="languagePortuguese"/>
         </div>
         <div class="projects-grid-container">
             <ProjectCard v-for="project in projectsList" :languagePortuguese="languagePortuguese" :key="project.name" :project="project" />

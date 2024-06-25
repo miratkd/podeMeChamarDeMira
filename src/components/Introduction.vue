@@ -2,13 +2,11 @@
     <div class="introduction-container">
         <div class="introduction-text-container">
             <!-- Pt-Br -->
-            <h1 v-if="languagePortuguese" class="introduction-main-text">Prazer em conhecer! <br> Eu me chamo <b
-                    class="introduction-name-detail">Lucas Mira</b>, <br> Mas pode me chamar apenas de <b
+            <h1 v-if="languagePortuguese" class="introduction-main-text">Apaixonado por tecnologia <br> e sempre pronto para um desafio.<br> Pode me chamar de <b
                     class="introduction-name-detail">Mira</b>
             </h1>
             <!-- En-Us -->
-            <h1 v-else class="introduction-main-text">Nice to meet you! <br> My name is <b
-                    class="introduction-name-detail">Lucas Mira</b>, <br> But you can just call me <b
+            <h1 v-else class="introduction-main-text">Passionate about technology <br> and always up for a challenge. <br> You can call me <b
                     class="introduction-name-detail">Mira</b>
             </h1>
             <p class="introduction-description">{{ languagePortuguese ? textBR : textUS }}</p>
@@ -63,7 +61,7 @@ export default {
 }
 
 .introduction-main-text {
-    width: 120%;
+    width: 140%;
     z-index: 2;
 }
 
