@@ -65,6 +65,16 @@ export default {
                     codeLinkBack: null
                 },
                 {
+                    name: 'Club da Cotação',
+                    img: require('@/assets/ClubDaCotacao.png'),
+                    descBR: 'Site institucional desenvolvido para a empresa Club da Cotação',
+                    descUS: 'Institutional website developed for the company Club da Cotação',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    projectLink: 'https://club-da-cotacao.netlify.app/',
+                    codeLinkFront: null,
+                    codeLinkBack: null
+                },
+                {
                     name: 'Black-Jack-Rest',
                     img: require('@/assets/BlackJackRest.png'),
                     descBR: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
