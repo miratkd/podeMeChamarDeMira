@@ -2,27 +2,39 @@
     <div class="projects-container">
         <div class="projects-title-container">
             <h1>{{languagePortuguese ? 'Projetos' : 'Projects'}}</h1>
-            <ContactMe :languagePortuguese="languagePortuguese"/>
+            <select v-model="selectedSkill" class="projects-filter">
+                <option :value="null">Todos</option>
+                <option v-for="skill in skills" :key="skill" :value="skill">{{ skill }}</option>
+            </select>
         </div>
         <div class="projects-grid-container">
-            <ProjectCard v-for="project in projectsList" :languagePortuguese="languagePortuguese" :key="project.name" :project="project" />
+            <ProjectCard v-for="project in showList" :languagePortuguese="languagePortuguese" :key="project.name" :project="project" />
         </div>
     </div>
 </template>
 
 <script>
-import ContactMe from './ContactMe.vue';
 import ProjectCard from './ProjectCard.vue';
 
 export default {
     name: 'ProjectsComponet',
     props:['languagePortuguese'],
     components: {
-        ContactMe,
         ProjectCard
     },
     data() {
         return {
+            selectedSkill: null,
+            skills:[
+                "HTML/CSS",
+                "Javascript",
+                "Vue.Js",
+                "Python",
+                "Django Rest",
+                "SQL/Postgresql",
+                "Figma",
+                "Cypress",
+            ],
             projectsList: [
                 {
                     name: 'Easy-Password',
@@ -69,7 +81,7 @@ export default {
                     img: require('@/assets/ClubDaCotacao.png'),
                     descBR: 'Site institucional desenvolvido para a empresa Club da Cotação',
                     descUS: 'Institutional website developed for the company Club da Cotação',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js'],
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma'],
                     projectLink: 'https://club-da-cotacao.netlify.app/',
                     codeLinkFront: null,
                     codeLinkBack: null
@@ -96,6 +108,12 @@ export default {
                 }
             ]
         }
+    },
+    computed:{
+        showList(){
+            if (!this.selectedSkill) return this.projectsList
+            return this.projectsList.filter(value => value.skills.includes(this.selectedSkill))
+        }
     }
 }
 </script>
@@ -116,6 +134,17 @@ export default {
     grid-template-columns: 1fr 1fr;
     gap: 10vh 3vw;
     margin-top: 3vh;
+}
+
+.projects-filter{
+    padding: 0.5vw;
+    border-radius: 10px;
+    font-family: 'Space Grotesk';
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.projects-filter:focus{
+    outline: none;
 }
 
 @media screen and (max-width: 850px) {
