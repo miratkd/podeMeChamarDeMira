@@ -6,6 +6,7 @@
                 <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Projeto' : 'View Project'}}</p>
                 <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Front-End' : 'View Front-End Code'}}</p>
                 <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Back-End' : 'View Back-End Code'}}</p>
+                <p v-if="project.docLinkBack" v-on:click="goToLink(project.docLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Documentação Back-End' : 'View Back-End Documentation'}}</p>
             </div>
         </div>
         
@@ -16,10 +17,11 @@
         </div>
         <div class="project-mobile-row">
             <p v-if="project.projectLink" v-on:click="goToLink(project.projectLink)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Projeto' : 'View Project'}}</p>
+            <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Front-End' : 'View Front-End Code'}}</p>
         </div>
         <div class="project-mobile-row">
-            <p v-if="project.codeLinkFront" v-on:click="goToLink(project.codeLinkFront)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Front-End' : 'View Front-End Code'}}</p>
             <p v-if="project.codeLinkBack" v-on:click="goToLink(project.codeLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Código Back-End' : 'View Back-End Code'}}</p>
+            <p v-if="project.docLinkBack" v-on:click="goToLink(project.docLinkBack)" class="project-card-img-info-text">{{languagePortuguese ? 'Ver Documentação Back-End' : 'View Back-End Documentation'}}</p>
         </div>
     </div>
 </template>

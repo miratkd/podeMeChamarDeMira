@@ -3,14 +3,14 @@
         <div class="skills-row">
             <div class="skill-cell">
                 <h3>HTML/CSS</h3>
-                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
+                <p>4 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
             </div>
             <div class="skill-cell">
                 <h3>Javascript</h3>
-                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
+                <p>4 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
             <div class="skill-cell">
                 <h3>Vue.JS</h3>
-                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
+                <p>4 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
         </div>
         <div class="skills-row">
             <div class="skill-cell">
@@ -28,8 +28,12 @@
         </div>
         <div class="skills-row">
             <div class="skill-cell">
-                <h3>Agile</h3>
-                <p>3 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
+                <h3>PHP</h3>
+                <p>1 {{ languagePortuguese ? 'ano de experiência' : 'Year of experience' }}</p>
+            </div>
+            <div class="skill-cell">
+                <h3>Laravel Rest</h3>
+                <p>1 {{ languagePortuguese ? 'ano de experiência' : 'Year of experience' }}</p>
             </div>
         </div>
     </div>

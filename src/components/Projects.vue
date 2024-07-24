@@ -31,7 +31,10 @@ export default {
                 "Vue.Js",
                 "Python",
                 "Django Rest",
+                "PHP",
+                "Laravel Rest",
                 "SQL/Postgresql",
+                "MySQL",
                 "Figma",
                 "Cypress",
             ],
@@ -44,7 +47,8 @@ export default {
                     skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django Rest', 'SQL/Postgresql', 'Figma', 'Cypress'],
                     projectLink: 'https://easypassword-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
-                    codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend'
+                    codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend',
+                    docLinkBack: 'https://documenter.getpostman.com/view/13841210/2sA3kVn2ib'
                 },
                 {
                     name: 'Audiphile',
@@ -65,6 +69,17 @@ export default {
                     projectLink: 'https://arch-lm.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Art-Studio?tab=readme-ov-file',
                     codeLinkBack: null
+                },
+                {
+                    name: 'HangMan',
+                    img: require('@/assets/hangman.png'),
+                    descBR: 'Não tem nada mais simples e relaxante do que uma partida de forca, acerte as letras e você ganha, fique sem vidas e você perde, simples e qualquer um pode experimentar.',
+                    descUS: "There's nothing simpler and more relaxing than a hangman match, hit the letters and you win, run out of lives and you lose, simple and anyone can try it.",
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'PHP', 'Laravel Rest', 'MySQL', 'Figma'],
+                    projectLink: 'https://hangman-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/hangmam-front',
+                    codeLinkBack: 'https://github.com/miratkd/hangMan',
+                    docLinkBack: 'https://documenter.getpostman.com/view/13841210/2sA3kUG2Es',
                 },
                 {
                     name: 'Connect-Four',
