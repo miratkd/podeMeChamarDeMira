@@ -6,7 +6,7 @@
                 <p>4 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p>
             </div>
             <div class="skill-cell">
-                <h3>Javascript</h3>
+                <h3>JavaScript/TypeScript</h3>
                 <p>4 {{ languagePortuguese ? 'anos de experiência' : 'Years of experience' }}</p></div>
             <div class="skill-cell">
                 <h3>Vue.JS</h3>
@@ -53,6 +53,7 @@ export default {
 }
 .skill-cell{
     width: 33%;
+    text-align: center;
 }
 .skills-container{
     border-top: 1px solid white;

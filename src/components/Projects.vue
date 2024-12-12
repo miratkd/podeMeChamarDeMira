@@ -28,7 +28,9 @@ export default {
             skills:[
                 "HTML/CSS",
                 "Javascript",
+                'Typescript', 
                 "Vue.Js",
+                'Nuxt.Js',
                 "Python",
                 "Django",
                 "PHP",
@@ -45,9 +47,9 @@ export default {
                     img: require('@/assets/EasyPassword.png'),
                     descBR: 'Se você também está cansado do botão "esqueci a senha", de uma olhada nesse projeto, você vai achar interessante.',
                     descUS: "If you're also tired of the 'forgot password' button, take a look at this project, you'll find it interesting.",
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django', 'REST', 'SQL/Postgresql', 'Figma', 'Cypress'],
-                    projectLink: 'https://easypassword-lm.netlify.app/',
-                    codeLinkFront: 'https://github.com/miratkd/EasyPasswordFront',
+                    skills: ['HTML/CSS', 'Typescript', 'Nuxt.Js', 'Vue.Js', 'Python', 'Django', 'REST', 'SQL/Postgresql', 'Figma', 'Cypress'],
+                    projectLink: 'https://easy-password-v2.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/easy-password-v2',
                     codeLinkBack: 'https://github.com/miratkd/EasyPasswordBackend',
                     docLinkBack: 'https://documenter.getpostman.com/view/13841210/2sA3kVn2ib'
                 },
@@ -87,9 +89,9 @@ export default {
                     img: require('@/assets/connect-four.png'),
                     descBR: 'Lembra de passar horas jogando connect four quando era criança? Não? Nem eu...',
                     descUS: 'Remember spending hours playing "connect four" when you were a kid? No? Me neither...',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Figma', 'Cypress'],
-                    projectLink: 'https://connect-four-lm.netlify.app/',
-                    codeLinkFront: 'https://github.com/miratkd/Connect-Four',
+                    skills: ['HTML/CSS', 'Typescript', 'Nuxt.Js', 'Vue.Js', 'Figma', 'Cypress'],
+                    projectLink: 'https://connect-four-v2.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/connect-four-v2',
                     codeLinkBack: null
                 },
                 {
@@ -101,16 +103,6 @@ export default {
                     projectLink: 'https://club-da-cotacao.netlify.app/',
                     codeLinkFront: null,
                     codeLinkBack: null
-                },
-                {
-                    name: 'Black-Jack-Rest',
-                    img: require('@/assets/BlackJackRest.png'),
-                    descBR: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
-                    descUS: 'How about a little game of Black-Jack?',
-                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django', 'REST', 'SQL/Postgresql'],
-                    projectLink: 'https://black-jack-rest.netlify.app/',
-                    codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
-                    codeLinkBack: 'https://github.com/miratkd/BlackJackRest'
                 },
                 {
                     name: 'My-link',
@@ -139,6 +131,16 @@ export default {
                     projectLink: 'https://showplanets.netlify.app/',
                     codeLinkFront: 'https://github.com/miratkd/Planets',
                     codeLinkBack: null
+                },
+                {
+                    name: 'Black-Jack-Rest',
+                    img: require('@/assets/BlackJackRest.png'),
+                    descBR: 'Que tal uma partidinha de Black-Jack? (famoso "21")',
+                    descUS: 'How about a little game of Black-Jack?',
+                    skills: ['HTML/CSS', 'Javascript', 'Vue.Js', 'Python', 'Django', 'REST', 'SQL/Postgresql'],
+                    projectLink: 'https://black-jack-rest.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/black-jack-rest-front-end',
+                    codeLinkBack: 'https://github.com/miratkd/BlackJackRest'
                 }
             ]
         }
