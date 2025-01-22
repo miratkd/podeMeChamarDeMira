@@ -64,6 +64,17 @@ export default {
                     codeLinkBack: null
                 },
                 {
+                    name: 'My-link',
+                    img: require('@/assets/myLink.png'),
+                    descBR: 'É como o seu cartão de visita, mas para o século 21.',
+                    descUS: "It's like your business card, but for the 21st century.",
+                    skills: ['PHP', 'Laravel', 'MySQL', 'REST', 'HTML/CSS', 'Typescript', 'Nuxt.Js', 'Vue.Js', 'Figma', 'Cypress'],
+                    codeLinkBack: 'https://github.com/miratkd/MyLinkBack',
+                    docLinkBack: 'https://documenter.getpostman.com/view/13841210/2sA3rwNaFV',
+                    projectLink: 'https://my-link-lm.netlify.app/',
+                    codeLinkFront: 'https://github.com/miratkd/MyLink-front',
+                },
+                {
                     name: 'Arch',
                     img: require('@/assets/arch.png'),
                     descBR: 'Um projeto voltado para estética, beleza e minimalismo. Meus professores de arte ficariam orgulhosos.',
@@ -103,15 +114,6 @@ export default {
                     projectLink: 'https://club-da-cotacao.netlify.app/',
                     codeLinkFront: null,
                     codeLinkBack: null
-                },
-                {
-                    name: 'My-link',
-                    img: require('@/assets/myLink.png'),
-                    descBR: 'API para criar uma aplicação de "links cartões de visita"',
-                    descUS: 'API to create an application of "business card links"',
-                    skills: ['PHP', 'Laravel', 'MySQL', 'REST'],
-                    codeLinkBack: 'https://github.com/miratkd/MyLinkBack',
-                    docLinkBack: 'https://documenter.getpostman.com/view/13841210/2sA3rwNaFV',
                 },
                 {
                     name: 'My-kanban',
